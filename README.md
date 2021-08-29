@@ -76,3 +76,6 @@ __IOS_SetRadioURL("asdf");
 2. Signing 위의 + Capability 버튼 누르고 BackgroundModes 추가 후 Audio 모드 클릭
 
 ![capability](./readme_Images/capability.png)
+
+[FRadioPlayerUnityPlugin-ios](https://github.com/Goeun1001/FRadioPlayerUnityPlugin-ios)
+
