@@ -1,5 +1,13 @@
 # FRadioPlayerUnityPlugin-unity
 
+- 환경
+
+Xcode 12.5
+
+Unity 2019.4.29f1 
+
+iOS 14.7인 iPhone XS에서 실험완료
+
 - objc wrapper
 
 ```objective-c
@@ -30,11 +38,9 @@
 
 참고: [유니티용 Plugin 만들기 : iOS편 (Swift)](https://medium.com/sunriv/%EC%9C%A0%EB%8B%88%ED%8B%B0%EC%9A%A9-plugin-%EB%A7%8C%EB%93%A4%EA%B8%B0-ios%ED%8E%B8-swift-de97c8449012)
 
-
-
 ## 유니티 세팅하기
 
-1. Assets/Plugins에 FRadioPlayer.framework와 FRadioPlayerUnityPluginBridge를 import한다.
+1. FRadioPlayer.framework와 FRadioPlayerUnityPluginBridge를 import한다.
 
 ![folder](./readme_Images/folder.png)
 
@@ -44,8 +50,6 @@
 using System.Runtime.InteropServices;
 
 // 클래스 내부
-[DllImport("__Internal")]
-        internal static extern void __IOS_Initialize();
         [DllImport("__Internal")]
         internal static extern void __IOS_SetRadioURL(string str);
         [DllImport("__Internal")]
